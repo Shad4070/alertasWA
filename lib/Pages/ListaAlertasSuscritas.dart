@@ -50,6 +50,20 @@ class ListaAlertasSuscritas extends StatelessWidget {
                 title: Text('Activar Alertas'),
                 onTap: (){} ,
               ),
+              Expanded(
+                  child: Align(
+                      alignment: FractionalOffset.bottomCenter,
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: <Widget>[
+                          Divider(),
+                          ListTile(
+                              leading: Icon(Icons.exit_to_app),
+                              title: Text('Cerrar Sesión'),
+                              onTap: (){}
+                          ),
+                        ],
+                      ))),
             ],
           ),
         ),

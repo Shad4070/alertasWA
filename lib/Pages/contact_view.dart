@@ -80,7 +80,7 @@ class _ContactListItem extends StatelessWidget {
                 ),
               );
             },
-            //subtitle: Text('Correcto', textAlign: TextAlign.center),
+            //subtitle: Text('Correcto', textAlign: TextAlign.center, style: ,),
             trailing: Icon( Icons.check , size: 35 , color: Colors.black),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
             selected: true,
