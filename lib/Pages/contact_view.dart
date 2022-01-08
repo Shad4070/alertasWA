@@ -15,17 +15,18 @@ class _ContactListItem extends StatelessWidget {
       return Container (
         child:
         SizedBox(
-          //height: 90,
+          //height: 150,
           child: ListTile(
-          leading: CircleAvatar(
+          leading:  CircleAvatar(
             backgroundImage: NetworkImage(_contact.url),
-            radius: 40,
+            radius: 30,
+            backgroundColor: Colors.transparent,
             //child: Icon(Icons.block ),
             //backgroundColor: Colors.white,
           ),
           title: Center( heightFactor: 4.3, child: Text(_contact.fullName,
             style: TextStyle(
-              fontWeight: FontWeight.bold
+              fontWeight: FontWeight.bold, color: Colors.black
             ),
           )
           ),
@@ -33,15 +34,21 @@ class _ContactListItem extends StatelessWidget {
             Navigator.push<void>(
               context,
               MaterialPageRoute<void>(
-                builder: (BuildContext context) => new detalle_AlertaXProyecto( nombreEmpresa: _contact.fullName),
+                builder: (BuildContext context) =>
+                  new detalle_AlertaXProyecto( nombreEmpresa: _contact.fullName, state: _contact.state),
               ),
             );
           },
-        //subtitle: Text(_contact.email)
+            //subtitle: Text('Error', textAlign: TextAlign.center),
+            trailing: Icon( Icons.block, size: 35 , color: Colors.black),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+            selected: true,
+            selectedTileColor: Colors.red[400],
       ),
       ),
-        color: Colors.red,
-        //margin: EdgeInsets.all(20),
+        //color: Color(0xffEE6060),
+        margin: EdgeInsets.fromLTRB(6, 5, 5, 0),
+
       );
     }
     else if (_contact.state == '1')
@@ -49,17 +56,18 @@ class _ContactListItem extends StatelessWidget {
       return Container (
         child:
         SizedBox(
-          //height: 90,
+          //height: 150,
           child: ListTile(
-            leading: CircleAvatar(
+            leading:  CircleAvatar(
               backgroundImage: NetworkImage(_contact.url),
-              radius: 40,
+              radius: 30,
+              backgroundColor: Colors.transparent,
               //child: Icon(Icons.block ),
               //backgroundColor: Colors.white,
             ),
             title: Center( heightFactor: 4.3, child: Text(_contact.fullName,
               style: TextStyle(
-                  fontWeight: FontWeight.bold
+                  fontWeight: FontWeight.bold, color: Colors.black
               ),
             )
             ),
@@ -67,15 +75,20 @@ class _ContactListItem extends StatelessWidget {
               Navigator.push<void>(
                 context,
                 MaterialPageRoute<void>(
-                  builder: (BuildContext context) => new detalle_AlertaXProyecto( nombreEmpresa: _contact.fullName),
+                  builder: (BuildContext context) =>
+                    new detalle_AlertaXProyecto( nombreEmpresa: _contact.fullName, state: _contact.state),
                 ),
               );
             },
-            //subtitle: Text(_contact.email)
+            //subtitle: Text('Correcto', textAlign: TextAlign.center),
+            trailing: Icon( Icons.check , size: 35 , color: Colors.black),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+            selected: true,
+            selectedTileColor: Colors.green[400],
           ),
         ),
-        color: Colors.green,
-        //margin: EdgeInsets.all(20),
+        //color: Color(0xff56D04E),
+        margin: EdgeInsets.fromLTRB(6, 5, 5, 0),
       );
     }
   }

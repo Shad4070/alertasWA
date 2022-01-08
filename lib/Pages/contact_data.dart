@@ -25,36 +25,36 @@ const kContacts = const <Contact>[
       state: '1',
       fullName: 'ACESCO',
       email:'',
-      url: 'https://www.acesco.com.co/wp-content/uploads/2018/11/cropped-logo-web-nuevo.png'
+      url: 'https://acesco.com.pr/wp-content/uploads/2019/08/LOGOTIPO-ACESCO_POSITIVO-VERTICAL.jpg'
   ),
   const Contact(
       state: '0',
       fullName: 'CELEMA',
       email:'',
-      url: 'https://celema.co/wp-content/themes/Divi/images/logo.png'
+      url: 'https://asoleche.org/wp-content/uploads/2019/01/2019-celema.jpg'
   ),
   const Contact(
       state: '1',
       fullName: 'CALZATODO',
       email:'',
-      url: 'https://calzatodocol.vteximg.com.br/arquivos/logo-calzatodo.png?v=637169488405830000'
+      url: 'https://cosmocentro.com/wp-content/uploads/2016/07/logo-calzatodo-580x580-1.jpg'
   ),
   const Contact(
       state: '1',
       fullName: 'TIERRAGRO',
       email:'',
-      url: 'https://cdn.shopify.com/s/files/1/0410/2199/7206/files/logo-tierragro.png?v=1621540247'
+      url: 'https://lamayorista.com/wp-content/uploads/2020/09/logotierragro_Mesa-de-trabajo-1-2.jpg'
   ),
   const Contact(
       state: '1',
       fullName: 'LANDERS',
       email:'',
-      url: 'https://hogaruniversal.vteximg.com.br/arquivos/LogoUniversalWeb.jpg?v=637280062419730000'
+      url: 'https://bodegondelhogar.com/wp-content/uploads/2017/01/universal.jpg'
   ),
   const Contact(
       state: '0',
       fullName: 'DAIMLER',
       email:'',
-      url: 'https://www.daimler.com.co/wp-content/uploads/2019/08/Logo_28x211px_tablet_dektopL.png'
+      url: 'https://eigp.es/wp-content/uploads/2021/02/Logo-Daimler-AG.jpg'
   )
 ];
